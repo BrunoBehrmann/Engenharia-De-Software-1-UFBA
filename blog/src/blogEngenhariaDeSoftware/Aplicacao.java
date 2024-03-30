@@ -119,14 +119,12 @@ public class Aplicacao {
                 
             case "8":
             	System.out.println("Aplcação encerrada.");
-                break;
-                
+            	break;                
             default:
                 System.out.println("Opção inválida!");
 		
 		}
 		scanner.close();
-		return;
 	}
 
 	public void voltaAoMenu(Usuario usuario) {
@@ -233,14 +231,15 @@ public class Aplicacao {
             voltaAoMenu(usuario);
             return;
         } else {
-            System.out.print("Selecione a nota de um blog que quer comentar:\n");
             int numero = 1;
             int numero2 = 1;
+            Boolean possuiAlgumaNota = false;
             for (Blog blog : getBlogs()) {
                 if (blog.getNotas().isEmpty()) {
                     System.out.println(" -  " + blog.getTitulo() + " - NÃO POSSUI NOTAS.\n");
                     continue;
                 } else {
+                	possuiAlgumaNota = true;
                     System.out.println(numero + ". " + blog.getTitulo() + " - NOTAS:\n");
                     for (Nota nota : blog.getNotas()) {
                         System.out.println(" --> " + numero + "." + numero2 + " <-- Blog ( " + blog.getTitulo() + " ) - NOTAS: ");
@@ -251,7 +250,11 @@ public class Aplicacao {
                 }
                 numero++;
             }
-
+            if (possuiAlgumaNota == false) {
+            	System.out.println("Blogs sem conteúdo");
+            	voltaAoMenu(usuario);
+            }
+            
             System.out.println("Digite o número da nota que deseja comentar no formato 'numero.numero' ");
             Scanner scanner = new Scanner(System.in);
             if (scanner.hasNextLine()) { // Verifica se há uma próxima linha disponível
@@ -265,8 +268,8 @@ public class Aplicacao {
                 if (numeroSelecionado.equals(primeiro + "." + segundo)) {
                     System.out.println("Você selecionou a nota " + primeiroInt + "." + segundoInt);
                     getBlogs().get(primeiroInt - 1).getNotas().get(segundoInt - 1).getNota();
-
-                    System.out.println("----------------------------------------------------------\nAdicione um comentário:");
+                    
+                	System.out.println("----------------------------------------------------------\nAdicione um comentário:");
                     if (scanner.hasNextLine()) {
                         String comentarioNota = scanner.nextLine();
 
@@ -277,9 +280,12 @@ public class Aplicacao {
                     } else {
                         System.out.println("Nenhuma entrada encontrada para o comentário.");
                     }
+                    
+                    
                 } else {
                     System.out.println("Opção inválida. Por favor, selecione um número válido.");
                 }
+                
             } else {
                 System.out.println("Nenhuma entrada encontrada para o número da nota.");
             }
@@ -307,21 +313,76 @@ public class Aplicacao {
     	scanner.close();
     }
 
-    //
+    // 7. REMOVER COMENTÁRIO
     private void removeComentario(Usuario usuario) {
-    	
+    	if (getBlogs().isEmpty()) {
+            System.out.println("Não existem Blogs para remoção de um comentario.");
+            voltaAoMenu(usuario);
+            return;
+        } else {
+            int numero = 1;
+            int numero2 = 1;
+            Boolean possuiAlgumaNota = false;
+            for (Blog blog : usuario.getBlogs()) {
+                if (blog.getNotas().isEmpty()) {
+                    System.out.println(" Blog ( " + blog.getTitulo() + " ) - NÃO POSSUI NOTAS.\n");
+                    continue;
+                } else {
+                	possuiAlgumaNota = true;
+                    System.out.println(numero + ". " + blog.getTitulo() + " - NOTAS:\n");
+                    for (Nota nota : blog.getNotas()) {
+                        System.out.println(" --> " + numero + "." + numero2 + " <-- Blog ( " + blog.getTitulo() + " ) - NOTAS: ");
+                        nota.getNota();
+                        numero2++;
+                    }
+                    System.out.println("----------------------------------------------------------\n");
+                }
+                numero++;
+            }
+            
+            if (possuiAlgumaNota == false) {
+            	System.out.println("Você não pode remover esse tipo de nota.");
+            	voltaAoMenu(usuario);
+            }
+            
+            System.out.println("Digite o número da nota que deseja remover o comentário no formato 'numero.numero' ");
+            Scanner scanner = new Scanner(System.in);
+            if (scanner.hasNextLine()) { // Verifica se há uma próxima linha disponível
+                String numeroSelecionado = scanner.nextLine();
+
+                char primeiro = numeroSelecionado.charAt(0);
+                char segundo = numeroSelecionado.charAt(2);
+
+                int primeiroInt = primeiro - '0';
+                int segundoInt = segundo - '0';
+                if (numeroSelecionado.equals(primeiro + "." + segundo)) {
+                    System.out.println("Você selecionou a nota " + primeiroInt + "." + segundoInt);
+                    usuario.getBlogs().get(primeiroInt - 1).getNotas().get(segundoInt - 1).getNota();
+                    
+                    if (getBlogs().get(primeiroInt - 1).getNotas().get(segundoInt - 1).getComentarios().isEmpty()) {
+                        voltaAoMenu(usuario);
+                    } else {
+                    	System.out.println("----------------------------------------------------------\n");
+                        
+                        System.out.println("Selecione um comentario para remover");
+                        int idComentario = scanner.nextInt();
+                        
+                        getBlogs().get(primeiroInt - 1).getNotas().get(segundoInt - 1).removerComentario(idComentario);
+                        usuario.getBlogs().get(primeiroInt - 1).getNotas().get(segundoInt - 1).getNota();
+                        voltaAoMenu(usuario);
+                    }
+                } else {
+                    System.out.println("Opção inválida. Por favor, selecione um número válido.");
+                }
+            } else {
+                System.out.println("Nenhuma entrada encontrada para o número da nota.");
+            }
+            voltaAoMenu(usuario);
+            scanner.close();
+            return;
+        }
     }
     
-    
-    
-    
-    
-	
-	
-	
-	
-	
-	//
     public void adicionarBlogAplicacao(Blog blog) {
         AllBlogs.add(blog);
     }
