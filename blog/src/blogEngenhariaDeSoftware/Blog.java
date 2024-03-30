@@ -17,12 +17,26 @@ public class Blog {
         this.nota = new ArrayList<>();
     }
 
-    public void adicionarNota(Nota nota) {
-        this.nota.add(nota);
+    public void adicionarNota(Nota nota, Usuario usuario) {
+    	if (usuario == this.dono) {
+            this.nota.add(nota);
+            System.out.println("Nota adicionada com sucesso.");
+        } else {
+            System.out.println("Apenas o dono deste Blog pode adicionar notas.");
+        }
     }
 
-    public void removerNota(Nota nota) {
-        this.nota.remove(nota);
+    public void removerNota(Nota nota, Usuario usuario) {
+    	if (usuario == this.dono) {
+            if (this.nota.contains(nota)) {
+                this.nota.remove(nota);
+                System.out.println("Nota removida com sucesso.");
+            } else {
+                System.out.println("Esta nota não está presente na lista.");
+            }
+        } else {
+            System.out.println("Apenas o dono desta nota pode removê-la.");
+        }
     }
     
     public String getTitulo() {
@@ -37,7 +51,7 @@ public class Blog {
         return dono.getNome();
     }
     
-    public List<Nota> getNota() {
+    public List<Nota> getNotas() {
     	return nota;
     }
     
@@ -45,7 +59,7 @@ public class Blog {
     	System.out.println("Dono: " + this.getDono());
     	System.out.println("Título: " + this.getTitulo());
     	System.out.println("Data de criação: " + this.getDataCriacao());
-    	System.out.println("Notas: " + this.getNota());
+    	System.out.println("Notas: " + this.getNotas());
     	return;
     }
 }

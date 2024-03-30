@@ -1,9 +1,9 @@
 package blogEngenhariaDeSoftware;
 
-import java.util.Date;
-
 public class Main {
     public static void main(String[] args) {
+    	Aplicacao app1 = new Aplicacao();
+	    app1.iniciar();
         // Criando usuários
         /*Usuario usuario1 = new Usuario("Bruno", "alice@example.com");
         Usuario usuario2 = new Usuario("Claudio", "bob@example.com");
@@ -37,7 +37,5 @@ public class Main {
             	System.out.println("   - " + conteudo.getTexto() + " (Autor: " + conteudo.getAutor().getNome() + ")");
             }
         }*/
-	    Aplicacao app1 = new Aplicacao();
-	    app1.iniciar();
     }
 }

@@ -12,11 +12,13 @@ public class Nota extends Conteudo {
         this.comentarios = new ArrayList<>();
     }
 
-    public void adicionarComentario(Comentario comentario) {
+    public void adicionarComentario(Comentario comentario, Usuario usuario) {
+    	comentario.setAutor(usuario);
         comentarios.add(comentario);
     }
 
-    public void removerComentario(Comentario comentario) {
+    public void removerComentario(Comentario comentario, Usuario usuario) {
+    	
         comentarios.remove(comentario);
     }
 
@@ -43,9 +45,13 @@ public class Nota extends Conteudo {
     public void getNota() {
         System.out.println("Data da nota: " + this.getDataCriacaoNota());
         System.out.println("Nota: " + this.getTextoNota());
-        System.out.println("Comentários: ");
-        for (Comentario comentario : this.getComentarios()) {
-            System.out.println(" - " + comentario.getTexto());
+        if (this.getComentarios().isEmpty()) {
+            System.out.println("Não há comentários.");
+        } else {
+        	System.out.println("COMENTARIOS:");
+        	for (Comentario comentario : this.getComentarios()) {
+                System.out.println("          - " + comentario.getAutor().getNome() + ":  " + comentario.getTexto());
+            }
         }
     }
 }
