@@ -53,25 +53,6 @@ public class Aplicacao {
 	    scanner.close();
 	}
 	
-	// 1. CRIAR USUARIO
-	public void menuCriaUsuario() {
-		System.out.println("Digite o nome do seu novo usuario: ");
-		Scanner scanner = new Scanner(System.in);
-		String nomeNovoUsuario = scanner.nextLine();
-		
-		System.out.println("Digite o seu e-mail: ");
-		String emailNovoUsuario = scanner.nextLine();
-		
-		Usuario usuario = new Usuario(nomeNovoUsuario, emailNovoUsuario);
-		
-		adicionarUsuario(usuario);		
-		System.out.println("\n\nNovo cadastrado.");
-		System.out.println("nome: " + usuario.getNome() + "  email: " + usuario.getEmail());
-		voltaAoMenu(usuario);
-		scanner.close();
-		return;
-	}
-	
 	public void menuUsuario(Usuario usuario) {    
 
 		System.out.println("----------------------------------------------------------");
@@ -119,10 +100,12 @@ public class Aplicacao {
                 
             case "8":
             	System.out.println("Aplcação encerrada.");
+            	if (scanner.hasNextLine()) {
+        		    scanner.nextLine();
+        		}
             	break;                
             default:
                 System.out.println("Opção inválida!");
-		
 		}
 		scanner.close();
 	}
@@ -143,14 +126,24 @@ public class Aplicacao {
         scanner.close();
 	}
 	
-	public Blog criaBlog(String titulo, Date date, Usuario usuario) {
-		Blog novoBlog = new Blog(titulo, new Date(), usuario);
-	    adicionarBlogAplicacao(novoBlog);
-	    usuario.adicionarBlogUsuario(novoBlog);
-	    System.out.println("Blog criado com sucesso! Informações:");
-	    novoBlog.getBlog();
-	    return novoBlog;
-	}
+	// 1. CRIAR USUARIO
+		public void menuCriaUsuario() {
+			System.out.println("Digite o nome do seu novo usuario: ");
+			Scanner scanner = new Scanner(System.in);
+			String nomeNovoUsuario = scanner.nextLine();
+			
+			System.out.println("Digite o seu e-mail: ");
+			String emailNovoUsuario = scanner.nextLine();
+			
+			Usuario usuario = new Usuario(nomeNovoUsuario, emailNovoUsuario);
+			
+			adicionarUsuario(usuario);		
+			System.out.println("\n\nNovo cadastrado.");
+			System.out.println("nome: " + usuario.getNome() + "  email: " + usuario.getEmail());
+			voltaAoMenu(usuario);
+			scanner.close();
+			return;
+		}
 	
 	// 2. CRIAR BLOG
 	public void criaNovoBlog(Usuario usuario) {
@@ -377,11 +370,20 @@ public class Aplicacao {
             } else {
                 System.out.println("Nenhuma entrada encontrada para o número da nota.");
             }
-            voltaAoMenu(usuario);
             scanner.close();
+            voltaAoMenu(usuario);
             return;
         }
     }
+	
+	public Blog criaBlog(String titulo, Date date, Usuario usuario) {
+		Blog novoBlog = new Blog(titulo, new Date(), usuario);
+	    adicionarBlogAplicacao(novoBlog);
+	    usuario.adicionarBlogUsuario(novoBlog);
+	    System.out.println("Blog criado com sucesso! Informações:");
+	    novoBlog.getBlog();
+	    return novoBlog;
+	}
     
     public void adicionarBlogAplicacao(Blog blog) {
         AllBlogs.add(blog);
