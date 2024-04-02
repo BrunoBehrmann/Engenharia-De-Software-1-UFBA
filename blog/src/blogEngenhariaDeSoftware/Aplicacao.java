@@ -63,9 +63,9 @@ public class Aplicacao {
 		System.out.println("2. CRIAR BLOG                                            |");
 		System.out.println("3. CRIAR NOTA P/ BLOG                                    |");
 		System.out.println("4. VER NOTAS DE BLOG                                     |");
-		System.out.println("5. CRIAR COMENTÁRIO PARA NOTA                            |");
+		System.out.println("5. CRIAR COMENTARIO PARA NOTA                            |");
 		System.out.println("6. TROCAR DE USUARIO                                     |");
-		System.out.println("7. REMOVER COMENTÁRIO                                    |");
+		System.out.println("7. REMOVER COMENTARIO                                    |");
 		System.out.println("8. FECHAR                                                |");
 		System.out.println("--------------------------------------------------------- ");
 		Scanner scanner = new Scanner(System.in);
@@ -217,7 +217,7 @@ public class Aplicacao {
     	voltaAoMenu(usuario);
     }
     
-	// 5. CRIAR COMENTÁRIO PARA NOTA
+	// 5. CRIAR COMENTARIO PARA NOTA
     private void criaComentarioNota(Usuario usuario) {
         if (getBlogs().isEmpty()) {
             System.out.println("Não existem Blogs.");
@@ -306,7 +306,7 @@ public class Aplicacao {
     	scanner.close();
     }
 
-    // 7. REMOVER COMENTÁRIO
+    // 7. REMOVER COMENTARIO
     private void removeComentario(Usuario usuario) {
     	if (getBlogs().isEmpty()) {
             System.out.println("Não existem Blogs para remoção de um comentario.");
