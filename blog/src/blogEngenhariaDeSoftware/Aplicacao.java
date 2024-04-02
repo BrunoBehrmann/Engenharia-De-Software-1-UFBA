@@ -99,7 +99,7 @@ public class Aplicacao {
                 break;
                 
             case "8":
-            	System.out.println("\n\n\n\n\n\n\n\nAplcação encerrada.");
+            	System.out.println("Aplcação encerrada.");
             	if (scanner.hasNextLine()) {
         		    scanner.nextLine();
         		}
