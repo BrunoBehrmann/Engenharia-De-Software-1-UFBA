@@ -8,12 +8,12 @@ A descrição de cada atividade estará mais detalhada dentro de cada pasta 'con
 
 
 ## Relembrando POO
-### atv 1 - Estruturando e Desenvolvendo um Blog
+### 1 - Estruturando e Desenvolvendo um Blog
 
 Considerando os requisitos do sistema de blog descritos na atividade, foi desenhado um diagrama de classes utilizando uma ferramenta apropriada, como o draw.io. No diagrama, foram desenhadas as classes, atributos, relacionamentos, multiplicidade e navegabilidade, com a inclusão apenas dos atributos nas classes, sem necessidade de métodos. Além disso, foi escrito o código correspondente ao diagrama de classes. Por fim, foi feito o upload da imagem do diagrama (arquivo de imagem) e dos arquivos do código fonte nesta atividade.
 
 ## PRINCÍPIOS DE PROJETO
-## atv 2 - Princípio da Responsabilidade Unica
+### 2 - Princípio da Responsabilidade Unica
 
 Foi realizada a reestruturação do código anterior de acordo com o princípio da responsabilidade única, garantindo que cada classe e módulo do sistema de blog tenha uma única responsabilidade, promovendo maior coesão e facilitando a manutenção e expansão do código.
 
