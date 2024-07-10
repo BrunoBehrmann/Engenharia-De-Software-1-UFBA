@@ -1,4 +1,4 @@
-## 2. Exercício do Sistema de Blogs
+## 1. Exercício Sistema de Blogs
 * SEMESTRE:   2024.1
 * DOCENTE:    Claudio Nogueira Santana
 * DISCENTE: Bruno de Sousa Behrmann
