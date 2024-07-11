@@ -4,7 +4,7 @@ disciplina - MATA62 da Universidade Federal da Bahia
 Participante: *Bruno de Sousa Behrmann*
 
 Este respositório como finalidade de mostrar o meu desenvolvimento no aprendizado no campo da Engenharia de Software ao longo do semestre de 2024.1.
-A descrição de cada atividade estará mais detalhada dentro de cada pasta 'conteúdo' referente a atividade.
+A descrição de cada atividade estará mais detalhada dentro do README.md referente a cada atividade.
 
 
 ## Relembrando POO
