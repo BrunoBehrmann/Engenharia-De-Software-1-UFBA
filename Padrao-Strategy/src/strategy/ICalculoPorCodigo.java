@@ -1,7 +1,6 @@
 package strategy;
 
+// estrategia
 public interface ICalculoPorCodigo {
-	
-	public static void CalculaPreco (int codigoDePreco);
-	
+	public double CalculaPreco(int diasAlugada);
 }
