@@ -1,7 +1,7 @@
 # Engenharia de Software 1 - UFBA
 Disciplina: MATA62 - Universidade Federal da Bahia
 
-Este repositório visa registrar meu progresso e aprendizado em Engenharia de Software durante o semestre de 2024.1. Todas as atividades e exercícios realizados estão documentados nos arquivos `<nome-do-exercicio>.txt` em cada pasta.
+Este repositório visa registrar meu progresso e aprendizado em Engenharia de Software durante o semestre de 2024.1. Todas as atividades e exercícios realizados estão documentados nos arquivos `<nome-do-exercicio>.txt` em cada pasta. Está contido nesse Readme o resumo de cada atividade.
 
 ## Sumário
 
@@ -82,4 +82,4 @@ Criei um sistema de monitoramento de títulos públicos com o Padrão Observer, 
 
 ## Resumo
 
-Durante o semestre de 2024.1, explorei diversos aspectos da Engenharia de Software, focando em princípios de design e padrões de projeto. Realizei exercícios práticos em diagramas de classes e sequência, e apliquei conceitos como SRP, ISP, DIP e OCP. Além disso, trabalhei com padrões como Strategy, State, Singleton e Observer para aprimorar a estrutura e a eficiência do código.
+Durante o semestre, explorei diversos aspectos da Engenharia de Software, focando em princípios de design e padrões de projeto. Realizei exercícios práticos em diagramas de classes e sequência, e apliquei conceitos como SRP, ISP, DIP e OCP. Além disso, trabalhei com padrões como Strategy, State, Singleton e Observer para aprimorar a estrutura e a eficiência do código.
