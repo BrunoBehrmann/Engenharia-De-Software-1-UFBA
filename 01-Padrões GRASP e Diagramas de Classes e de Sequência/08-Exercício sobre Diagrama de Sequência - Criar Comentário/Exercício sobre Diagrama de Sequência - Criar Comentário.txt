@@ -1,0 +1,9 @@
+Exercício sobre Diagrama de Sequência - Criar Comentário
+
+Considere o diagrama de classes do sistema de blogs da imagem anexa a essa tarefa (e discutido em sala de aula) e desenhe o diagrama de sequência para o cenário de criação de um novo comentário, ou seja, o diagrama de sequência a partir da chamada do método criarComentario(texto: String, dataCriacao: String, idBlog: int, idNota: int, autor: Usuario) da classe SistemaBlog (mostrado no diagrama de classes anexo). Considere que esse método é chamado depois que o usuário digita o texto do comentário e clica em salvar. Observe que além do texto da nota, o método recebe como parâmetro o id do blog em que está a nota que será comentada e recebe também o id da nota que será comentada. Além disso, recebe o objeto do usuário autor do comentário. Considere que a classe Nota tem um atributo id do tipo int, que é seu identificador único. Durante esse exercício, você poderá ter que criar novos métodos nas classes existentes.
+
+Além disso, escreva o código referente as chamadas de métodos projetadas no diagrama de sequência que você desenhar.
+
+Atenção! Para fazer o diagrama de sequencia e seu código correspondente, leve em consideração os padrões GRASP Expert, Creator e Baixo Acoplamento.
+
+Faça upload nessa tarefa da imagem do diagrama de sequência (arquivo de imagem) e do código fonte que você escrever. Pode usar qualquer ferramenta para desenhar o diagrama e qualquer linguagem orientada a objetos para escrever o código.

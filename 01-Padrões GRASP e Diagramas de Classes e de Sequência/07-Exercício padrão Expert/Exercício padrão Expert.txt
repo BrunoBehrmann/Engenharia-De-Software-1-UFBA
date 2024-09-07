@@ -1,0 +1,7 @@
+Exercício padrão Expert
+
+Analise o código fonte das três classes anexas a essa tarefa.
+
+Verifique onde o padrão Expert está sendo violado. Altere o código de forma a remover tal violação.
+
+Faça upload aqui dos arquivos do código fonte alterado.

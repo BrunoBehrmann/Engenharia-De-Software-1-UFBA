@@ -1,0 +1,6 @@
+Exercício sobre o Princípio Aberto/Fechado
+
+Assista ao vídeo da aula sobre o Exemplo Prático sobre o Princípio Aberto/Fechado. Depois reestruture o código anexo a essa tarefa de acordo com o que foi feito no vídeo, ou seja, seguindo o princípio aberto/fechado.
+
+Faça upload dos arquivos resultantes aqui nessa tarefa.
+Faça upload dos arquivos separados, ou seja, não use arquivos .zip ou outros de compactação.

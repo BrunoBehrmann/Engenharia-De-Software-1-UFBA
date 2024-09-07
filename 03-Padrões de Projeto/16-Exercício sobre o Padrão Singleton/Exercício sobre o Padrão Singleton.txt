@@ -1,0 +1,3 @@
+Exercício sobre o Padrão Singleton
+
+Altere o código do Aplicativo de Comunicação feito no exercício anterior sobre o padrão State, de forma que os estados concretos sejam implementados de acordo com o padrão Singleton e, a cada mudança de estado, não seja necessário criar uma nova instância de cada estado concreto.

@@ -1,0 +1,6 @@
+Exercício sobre o Princípio da Inversão de Dependências
+
+Assista ao vídeo da aula sobre o Exemplo Prático sobre o Princípio da Inversão de Dependências. Depois reestruture o código anexo a essa tarefa de acordo com o que foi feito no vídeo, ou seja, seguindo o princípio da inversão de dependências.
+
+Faça upload dos arquivos resultantes aqui nessa tarefa.
+Faça upload dos arquivos separados, ou seja, não use arquivos .zip ou outros de compactação.

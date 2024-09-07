@@ -1,0 +1,5 @@
+Exercício sobre o Princípio da Responsabilidade Única
+
+Assista ao vídeo da aula sobre o Exemplo prático sobre o Princípio da Responsabilidade Única. Depois reestruture o código anexo a essa tarefa seguindo o que foi feito no vídeo, ou seja, reestruture o código de acordo com o princípio da responsabilidade única.
+
+Faça upload dos arquivos resultantes aqui nessa tarefa.

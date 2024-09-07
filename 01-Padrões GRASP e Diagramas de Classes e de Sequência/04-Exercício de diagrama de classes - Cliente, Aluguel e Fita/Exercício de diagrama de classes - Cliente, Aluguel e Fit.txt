@@ -1,0 +1,7 @@
+Exercício de diagrama de classes - Cliente, Aluguel e Fita
+
+Analise o código fonte das três classes anexas a essa tarefa.
+
+Desenhe o diagrama de classes referente ao código. No diagrama devem constar: métodos e atributos das classes, relacionamentos entre as classes, multiplicidade e navegabilidade.
+
+Faça upload aqui da imagem do diagrama.

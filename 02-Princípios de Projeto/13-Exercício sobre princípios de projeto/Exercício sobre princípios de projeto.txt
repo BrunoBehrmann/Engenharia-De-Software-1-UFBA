@@ -1,0 +1,11 @@
+Exercício sobre princípios de projeto
+
+Considere o programa com as quatro classes anexas: Programa, GerenciadorTributario, Venda e BancoDados.
+
+Considere que o usuário informou que o sistema poderá, no futuro, ser instalado em outros estados, e que o cálculo do imposto pode ser diferente em cada estado. Além disso, ele informa que o mecanismo onde o imposto total é registrado pode mudar. Atualmente o registro é feito em banco de dados, mas, no futuro pode ser feito em arquivo, ou em repositório web etc.
+
+Refatore o programa para que, quando for necessário alterar o cálculo do imposto ou o mecanismo de registro do total do imposto, tais mudanças sejam feitas de forma mais fácil, alterando o mínimo de código existente.
+
+Faça upload dos arquivos .java resultantes após a refatoração.
+
+Além disso, escreva um comentário dizendo que princípios de projeto você levou em consideração para fazer as alterações. Sugiro algo assim: "Considerando o princípio tal, coloquei tal parte do código em tal classe e blá blá blá. Considerando o princípio tal, fiz isso e aquilo..."

@@ -1,0 +1,9 @@
+Exercício sobre Diagrama de Sequência - Listar Notas
+
+Considere o diagrama de classes do sistema de blogs da imagem anexa a essa tarefa (e discutido em sala de aula) e desenhe o diagrama de sequência para o cenário de listagem dos textos de todas as notas de um blog, ou seja, o diagrama de sequência a partir da chamada do método mostrarTextoNotas(idBlog: int): List<String> da classe SistemaBlog. Considere que esse método é chamado depois que o usuário clica no título de um blog para entrar aquele blog. Observe que o método recebe como parâmetro o id do blog do qual as notas serão mostradas e retorna uma lista de strings contendo os textos das suas notas. Novos métodos podem ser criados nas classes.
+
+Além disso, escreva o código referente as chamadas de métodos projetadas no diagrama de sequência que você desenhar.
+
+Atenção! Para fazer o diagrama de sequencia e seu código correspondente, leve em consideração o padrão GRASP Expert.
+
+Faça upload nessa tarefa da imagem do diagrama de sequência (arquivo de imagem) e do código fonte que você escrever. Pode usar qualquer ferramenta para desenhar o diagrama e qualquer linguagem orientada a objetos para escrever o código.

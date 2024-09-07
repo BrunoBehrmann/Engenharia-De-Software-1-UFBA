@@ -1,0 +1,9 @@
+Exercício sobre Diagrama de Sequência - Criar Nota
+
+Considere o diagrama de classes do sistema de blogs da imagem anexa a essa tarefa (e discutido em sala de aula) e desenhe o diagrama de sequência para o cenário de criação de uma nova nota, ou seja, o diagrama de sequência a partir da chamada do método criarNota(texto: String, dataCriacao: String, idBlog: int) da classe SistemaBlog (mostrado no diagrama de classes anexo). Considere que esse método é chamado depois que o usuário digita o texto da nota e clica em salvar. Observe que além do texto da nota, o método recebe como parâmetro o id do blog em que a nota será criada. Novos métodos podem ser criados nas classes.
+
+Além disso, escreva o código referente as chamadas de métodos projetadas no diagrama de sequência que você desenhar.
+
+Atenção! Para fazer o diagrama de sequencia e seu código correspondente, leve em consideração os padrões GRASP Creator e Baixo Acoplamento.
+
+Faça upload nessa tarefa da imagem do diagrama de sequência (arquivo de imagem) e do código fonte que você escrever. Pode usar qualquer ferramenta para desenhar o diagrama e qualquer linguagem orientada a objetos para escrever o código.

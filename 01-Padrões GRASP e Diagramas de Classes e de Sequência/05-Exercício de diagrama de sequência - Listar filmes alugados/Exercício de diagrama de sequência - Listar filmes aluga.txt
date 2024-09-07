@@ -1,0 +1,11 @@
+Exercício de diagrama de sequência - Listar filmes alugados
+
+Analise o código fonte das três classes anexas a essa tarefa.
+
+Considere que o atributo fitasAlugadas da classe Cliente mantém a lista de alugueis do cliente. Além disso, considere que exista uma classe Sistema que tem a lista de todos os clientes e a lista de todas as fitas do sistema. Considere também que a classe Sistema tenha o método “public String mostrarNomeFilmesAlugados(String nome)”, que retorna uma string com o título de todas as fitas alugadas pelo cliente que tem o nome que o método recebe como parâmentro. Desenhe o diagrama de sequência da execução desse método. Relate se foi necessário criar novos métodos e, se sim, quais foram eles e em que classes foram criados.
+
+Além disso, escreva o código referente as chamadas de métodos projetadas no diagrama de sequência que você desenhar.
+
+Atenção! Leve o padrão Expert e o padrão Baixo Acoplamento em consideração.
+
+Faça upload aqui da imagem do diagrama de sequência e os arquivos do código fonte.

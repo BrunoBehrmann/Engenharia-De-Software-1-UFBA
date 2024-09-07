@@ -1,0 +1,5 @@
+Exercício sobre o Princípio da Segregação de Interfaces
+
+Assista ao vídeo da aula sobre o Exemplo Prático sobre o Princípio da Segregação de Interfaces. Depois reestruture o código anexo a essa tarefa de acordo com o que foi feito no vídeo, ou seja, seguindo o princípio da segregação de interfaces.
+
+Faça upload dos arquivos resultantes aqui nessa tarefa.

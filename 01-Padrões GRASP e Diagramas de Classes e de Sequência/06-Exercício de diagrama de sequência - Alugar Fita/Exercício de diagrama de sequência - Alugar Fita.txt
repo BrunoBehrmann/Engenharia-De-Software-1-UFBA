@@ -1,0 +1,11 @@
+Exercício de diagrama de sequência - Alugar Fita
+
+Analise o código fonte das três classes anexas a essa tarefa.
+
+Considere que exista uma classe Sistema que tenha o método alugarFita(String nomeCliente, String tituloFita, int diasAlugada) e que tenha a lista de todos os clientes e a lista de todas as fitas do sistema. Desenhe o diagrama de sequência para a realização do aluguel de uma fita. Relate se foi necessário criar novos métodos e, se sim, quais foram eles e em que classes foram criados.
+
+Além disso, escreva o código referente as chamadas de métodos projetadas no diagrama de sequência que você desenhar.
+
+Atenção! Leve o padrão Creator em consideração.
+
+Faça upload aqui da imagem do diagrama de sequência e os arquivos do código fonte.
