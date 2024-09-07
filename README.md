@@ -13,7 +13,7 @@ Este repositório visa registrar meu progresso e aprendizado em Engenharia de So
 
 ## Trabalho Prático
 
-**O trabalho prático está disponível no repositório:** [Clique aqui para acessar](https://github.com/BrunoBehrmann/Engenharia-De-Software-1-Trabalho-pratico)
+**Disponível no repositório:** [Engenharia-De-Software-1-Trabalho-pratico ](https://github.com/BrunoBehrmann/Engenharia-De-Software-1-Trabalho-pratico)
 
 ---
 
