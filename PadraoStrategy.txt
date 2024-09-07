@@ -1,0 +1,3 @@
+Exercício sobre o Padrão Strategy
+
+Considere as três classes anexas. Reestruture o programa usando o padrão Strategy para eliminar o switch-case da classe Fita. Faça upload das classes resultantes aqui.
